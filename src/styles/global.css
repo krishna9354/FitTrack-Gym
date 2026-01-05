@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+:root{
+  --bg:#071422;
+  --muted:#9fb0c3;
+  --accent:#2563eb;
+  --radius:14px;
+  --text:#e6f0fb;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Inter,system-ui,Arial,sans-serif;
+}
+
+body{
+  background:linear-gradient(180deg,#071422 0%,#071a29 100%);
+  color:var(--text);
+  padding-top:72px;
+}
+
+/* NAVBAR */
+.header{
+  position:fixed;
+  top:0;left:0;right:0;
+  height:72px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 32px;
+  background:linear-gradient(180deg,rgba(3,12,22,.9),rgba(3,12,22,.75));
+  z-index:1000;
+}
+
+.brand{display:flex;align-items:center;gap:12px}
+
+.logo{
+  width:44px;height:44px;
+  border-radius:10px;
+  background:linear-gradient(135deg,#2b9bff,#0d6efd);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;color:white;
+}
+
+.nav a{
+  color:#cfe6ff;
+  margin-left:16px;
+  text-decoration:none;
+}
+
+.join-btn{
+  background:linear-gradient(135deg,#1e90ff,#3aa0ff);
+  padding:10px 18px;
+  border-radius:10px;
+  color:white;
+  font-weight:600;
+  border:none;
+  cursor:pointer;
+}
+
+/* SHARED */
+.container{max-width:920px;margin:48px auto;padding:0 22px}
+.card{
+  background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(0,0,0,.08));
+  border-radius:var(--radius);
+  padding:30px;
+}
+.auth-switch button.active{
+  background:linear-gradient(135deg,#1e90ff,#3aa0ff);
+}

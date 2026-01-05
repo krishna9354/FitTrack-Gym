@@ -1,0 +1,152 @@
+/* ================= ROOT ================= */
+:root {
+  --bg: #071422;
+  --card: #0d2433;
+  --muted: #9fb0c3;
+  --accent: #2563eb;
+  --radius: 14px;
+  --text: #e6f0fb;
+}
+
+/* ================= GLOBAL ================= */
+body {
+  background: linear-gradient(180deg, #071422, #071a29);
+  color: var(--text);
+}
+
+/* ================= NAVBAR ================= */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  background: rgba(3, 12, 22, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 1000;
+}
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2b9bff, #0d6efd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.nav a {
+  color: #cfe6ff;
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+.nav a:hover {
+  color: var(--accent);
+}
+
+/* ================= BUTTON ================= */
+.join-btn {
+  background: linear-gradient(135deg, #1e90ff, #3aa0ff);
+  padding: 10px 14px;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.full-btn {
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.green-btn {
+  background: #10b981;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+  max-width: 1200px;
+  margin: 100px auto 40px;
+  padding: 0 22px;
+}
+
+/* ================= PRICING ================= */
+.pricing-intro {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.pricing-grid {
+  margin-bottom: 28px;
+}
+
+.pricing-card {
+  padding: 24px;
+}
+
+.highlight {
+  border-top: 5px solid #16a34a;
+}
+
+/* ================= HEAD ================= */
+.pricing-head {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.icon.blue { background: #1e90ff; }
+.icon.green { background: #16a34a; }
+.icon.orange { background: #ff7a45; }
+
+.price {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.price small {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* ================= FAQ ================= */
+.faq-section {
+  margin-top: 20px;
+}
+
+.faq-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  text-align: center;
+  color: var(--muted);
+  margin-top: 40px;
+}

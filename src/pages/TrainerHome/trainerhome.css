@@ -1,0 +1,182 @@
+/* ================= TRAINER HOME ================= */
+
+.trainer-home {
+  padding: 48px 22px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #e6f0fb;
+}
+
+/* ================= HEADER ================= */
+
+.trainer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.trainer-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.trainer-header .subtext {
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.logout-btn {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  border: none;
+  padding: 10px 16px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.25);
+}
+
+.logout-btn:hover {
+  opacity: 0.9;
+}
+
+/* ================= INFO CARD ================= */
+
+.trainer-info {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(0, 0, 0, 0.08)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 36px;
+}
+
+.trainer-info h2 {
+  margin-bottom: 8px;
+}
+
+.trainer-info p {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+/* ================= CLIENTS ================= */
+
+.clients-section h2 {
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+/* grid matches .grid-3 / .grid-4 behavior */
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* ================= CLIENT CARD ================= */
+
+.client-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(0, 0, 0, 0.08)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius);
+  padding: 22px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.client-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(2, 8, 18, 0.6);
+}
+
+/* avatar bubble */
+.client-avatar {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 12px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2b9bff, #0d6efd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 20px;
+  color: #fff;
+}
+
+.client-card h3 {
+  margin-bottom: 4px;
+}
+
+.client-card .goal {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* ================= PROGRESS ================= */
+
+.progress-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+
+.progress-bar div {
+  height: 100%;
+  background: linear-gradient(90deg, #16a34a, #22c55e);
+  border-radius: 999px;
+}
+
+/* ================= BUTTON ================= */
+
+.view-btn {
+  margin-top: 16px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  background: linear-gradient(135deg, #1e90ff, #3aa0ff);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(36, 99, 255, 0.18);
+}
+
+.view-btn:hover {
+  opacity: 0.9;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .clients-grid {
+    grid-template-columns: 1fr;
+  }
+}

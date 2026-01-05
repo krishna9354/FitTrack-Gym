@@ -1,0 +1,112 @@
+/* ================= NAVBAR ================= */
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  background: rgba(3,12,22,.9);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+}
+
+/* BRAND */
+.brand{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  flex-shrink: 0;
+}
+
+.logo{
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: linear-gradient(135deg,#2b9bff,#0d6efd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: white;
+}
+
+/* NAV LINKS */
+.nav{
+  display: flex;
+  align-items: center;
+  gap: 20px;              /* ✅ consistent spacing */
+  height: 100%;
+}
+
+.nav a{
+  color: #cfe6ff;
+  text-decoration: none;
+  font-weight: 500;
+  white-space: nowrap;   /* ✅ prevents overlap */
+}
+
+.nav a:hover{
+  color: var(--accent);
+}
+
+/* PROFILE MENU */
+.profile-wrapper{
+  position: relative;
+  margin-left: 16px;     /* ✅ separates from Contact */
+  flex-shrink: 0;        /* ✅ prevents collapse */
+}
+
+.profile-icon{
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#2b9bff,#0d6efd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* DROPDOWN */
+.profile-dropdown{
+  position: absolute;
+  top: 54px;
+  right: 0;
+  min-width: 170px;
+  background: rgba(13,36,51,.95);
+  border-radius: 14px;
+  overflow: hidden;
+  z-index: 2000;         /* ✅ FIX: dropdown over nav */
+  box-shadow: 0 12px 30px rgba(0,0,0,.5);
+}
+
+.profile-dropdown a,
+.profile-dropdown button{
+  padding: 12px 16px;
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  color: #cfe6ff;
+  text-align: left;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.profile-dropdown a:hover,
+.profile-dropdown button:hover{
+  background: rgba(255,255,255,.06);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px){
+  .nav{
+    display: none;
+  }
+}

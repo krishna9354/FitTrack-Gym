@@ -1,0 +1,259 @@
+/* ================= GLOBAL ================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+:root {
+  --bg: #071422;
+  --panel: #0f2636;
+  --card: #0d2433;
+  --muted: #9fb0c3;
+  --accent: #2563eb;
+  --white: #e6f0fb;
+  --radius: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #071422 0%, #071a29 100%);
+  color: var(--white);
+  line-height: 1.5;
+}
+
+/* ================= HEADER ================= */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(180deg, rgba(3,12,22,0.95), rgba(3,12,22,0.8));
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: linear-gradient(135deg,#2b9bff,#0d6efd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: #fff;
+}
+
+.brand h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #cfe6ff;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav a {
+  color: #cfe6ff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.nav a:hover {
+  color: var(--accent);
+}
+
+/* ================= BUTTONS ================= */
+.btn-primary {
+  background: linear-gradient(135deg,#1e90ff,#3aa0ff);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-outline {
+  border: 1px solid var(--accent);
+  padding: 10px 18px;
+  border-radius: 10px;
+  color: #cfe6ff;
+  text-decoration: none;
+}
+
+.btn-link {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 14px;
+}
+
+.btn-lg {
+  padding: 14px 26px;
+  font-size: 16px;
+}
+
+/* ================= HERO ================= */
+.hero {
+  padding: 80px 24px;
+}
+
+.hero-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-text .tag {
+  display: inline-block;
+  background: rgba(255,255,255,0.04);
+  padding: 6px 12px;
+  border-radius: 999px;
+  color: #9fc7ff;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.hero-text h2 {
+  font-size: 42px;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.hero-text p {
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 18px;
+}
+
+/* ================= SECTIONS ================= */
+.section {
+  padding: 70px 24px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+/* ================= GRID ================= */
+.grid-3 {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* ================= CARDS ================= */
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.08));
+  border-radius: var(--radius);
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.card h4 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: var(--muted);
+}
+
+/* ================= WORKOUT CARDS ================= */
+.workout-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.08));
+  border-radius: var(--radius);
+  padding: 20px;
+  text-align: center;
+}
+
+.workout-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.workout-card p {
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+/* ================= CTA ================= */
+.cta {
+  background: linear-gradient(90deg,#1e6af5,#0fb3ff);
+  text-align: center;
+  padding: 80px 20px;
+  margin: 60px 24px;
+  border-radius: 22px;
+}
+
+.cta h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.cta p {
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  text-align: center;
+  padding: 24px;
+  color: var(--muted);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    display: none;
+  }
+}

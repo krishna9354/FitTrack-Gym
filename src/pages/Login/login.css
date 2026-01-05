@@ -1,0 +1,222 @@
+/* ================= GOOGLE FONT ================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+/* ================= ROOT VARIABLES ================= */
+:root{
+  --bg:#071422;
+  --muted:#9fb0c3;
+  --accent:#2563eb;
+  --radius:14px;
+  --text:#e6f0fb;
+}
+
+/* ================= RESET ================= */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Inter,system-ui,Arial,sans-serif;
+}
+
+html,body{
+  height:100%;
+}
+
+body{
+  background:linear-gradient(180deg,#071422 0%,#071a29 100%);
+  color:var(--text);
+  padding-top:72px; /* navbar space */
+}
+
+/* ================= HEADER (LOGIN PAGE) ================= */
+.header{
+  position:fixed;
+  top:0;left:0;right:0;
+  height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 32px;
+  background:linear-gradient(180deg,rgba(3,12,22,.9),rgba(3,12,22,.75));
+  border-bottom:1px solid rgba(255,255,255,.03);
+  z-index:1000;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo{
+  width:44px;
+  height:44px;
+  border-radius:10px;
+  background:linear-gradient(135deg,#2b9bff,#0d6efd);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:800;
+  font-size:20px;
+  color:white;
+}
+
+.brand h1{
+  font-size:18px;
+  font-weight:600;
+  color:#cfe6ff;
+}
+
+.nav{
+  display:flex;
+  gap:18px;
+  align-items:center;
+}
+
+.nav a{
+  color:#cfe6ff;
+  text-decoration:none;
+}
+
+.nav a:hover{
+  color:var(--accent);
+}
+
+/* ================= BUTTON ================= */
+.join-btn{
+  width:100%;
+  background:linear-gradient(135deg,#1e90ff,#3aa0ff);
+  border:none;
+  padding:12px;
+  border-radius:10px;
+  font-weight:600;
+  cursor:pointer;
+  color:white;
+}
+
+/* ================= CONTAINER ================= */
+.container{
+  max-width:920px;
+  margin:48px auto;
+  padding:0 22px;
+}
+
+/* ================= LOGIN LAYOUT ================= */
+.login-section{
+  display:flex;
+  gap:28px;
+  align-items:center;
+}
+
+/* ================= CARD ================= */
+.card{
+  background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(0,0,0,.08));
+  border:1px solid rgba(255,255,255,.03);
+  border-radius:var(--radius);
+  padding:30px;
+}
+
+/* ================= ROLE SWITCH ================= */
+.auth-switch{
+  display:flex;
+  gap:12px;
+  margin-bottom:18px;
+}
+
+.auth-switch button{
+  flex:1;
+  padding:10px;
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.05);
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+  color:#cfe6ff;
+}
+
+.auth-switch button.active{
+  background:linear-gradient(135deg,#1e90ff,#3aa0ff);
+  box-shadow:0 8px 20px rgba(36,99,255,.2);
+}
+
+/* ================= INPUTS (WHITE TEXT FIXED) ================= */
+input,
+input:focus,
+input:active{
+  width:100%;
+  padding:12px;
+  border-radius:10px;
+  background:rgba(255,255,255,.02) !important;
+  border:1px solid rgba(255,255,255,.03);
+  color:#e6f0fb !important;
+  margin-bottom:12px;
+  outline:none;
+}
+
+input::placeholder{
+  color:#9fb0c3 !important;
+}
+
+/* Autofill fix */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus{
+  -webkit-text-fill-color:#e6f0fb !important;
+  box-shadow:0 0 0 1000px rgba(255,255,255,.02) inset !important;
+}
+
+/* ================= REMEMBER ME FIX ================= */
+.remember-me{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:14px;
+  color:var(--muted);
+  cursor:pointer;
+}
+
+.remember-me input[type="checkbox"]{
+  width:16px;
+  height:16px;
+  margin:0;
+  accent-color:var(--accent);
+}
+
+/* ================= IMAGE ================= */
+.login-image img{
+  width:100%;
+  border-radius:12px;
+  object-fit:cover;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px){
+  .login-section{
+    flex-direction:column;
+  }
+  .nav{
+    display:none;
+  }
+}
+/* ================= LOGIN RIGHT IMAGE FIX ================= */
+.login-right{
+  flex: 0.9;
+  display: flex;
+  justify-content: center;
+}
+
+.login-right img{
+  width: 100%;
+  max-width: 420px;   /* 🔥 controls image size */
+  height: auto;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+/* ================= RESPONSIVE IMAGE ================= */
+@media (max-width: 900px){
+  .login-right img{
+    max-width: 320px;
+    margin-top: 20px;
+  }
+}

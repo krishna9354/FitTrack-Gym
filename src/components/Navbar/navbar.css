@@ -1,0 +1,88 @@
+/* ================= NAVBAR ================= */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  background: linear-gradient(
+    180deg,
+    rgba(3, 12, 22, 0.9),
+    rgba(3, 12, 22, 0.75)
+  );
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  z-index: 999;
+}
+
+/* BRAND */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2b9bff, #0d6efd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0 6px 18px rgba(13, 110, 253, 0.14);
+}
+
+.brand h1 {
+  font-size: 18px;
+  color: #cfe6ff;
+  font-weight: 600;
+}
+
+/* NAV LINKS */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav a {
+  color: #cfe6ff;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.nav a:hover {
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+
+/* SIGN UP BUTTON */
+.join-btn {
+  background: linear-gradient(135deg, #1e90ff, #3aa0ff);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 8px 30px rgba(36, 99, 255, 0.12);
+}
+
+/* RESPONSIVE */
+@media (max-width: 640px) {
+  .nav {
+    display: none;
+  }
+
+  .header {
+    padding: 0 12px;
+  }
+}

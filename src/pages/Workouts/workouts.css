@@ -1,0 +1,76 @@
+  /* ================= WORKOUTS PAGE ONLY ================= */
+
+  .workouts-page {
+    margin-top: 90px;
+  }
+
+  /* INTRO */
+  .workouts-intro {
+    text-align: center;
+    margin-bottom: 26px;
+  }
+
+  .workouts-intro p {
+    color: var(--muted);
+  }
+
+  /* FILTERS */
+  .workout-filters {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+  }
+
+  /* WORKOUT CARD */
+  .workouts-page .workout {
+    overflow: hidden;
+  }
+
+  .workouts-page .thumb {
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .workouts-page .meta {
+    padding: 18px;
+  }
+
+  .workouts-page .meta h3 {
+    margin-bottom: 4px;
+  }
+
+  .workouts-page .small {
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  /* STATS */
+  .stats {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .stats div {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+
+  /* MORE PROGRAMS */
+  .more-programs {
+    margin-top: 28px;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .workout-filters {
+      justify-content: center;
+    }
+  }
+
+  
