@@ -137,8 +137,9 @@ function Signup() {
               </div>
             </div>
 
+            {/* ✅ FIXED IMAGE */}
             <div className="signup-right">
-              <img src="" alt="Signup" />
+              <img src="/assets/login.webp" alt="Signup" />
             </div>
           </section>
         </div>
