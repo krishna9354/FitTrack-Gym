@@ -12,7 +12,7 @@ import About from "./pages/About/About";
 import Home from "./pages/Home/Home";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Workouts from "./pages/Workouts/Workouts";
-import MyProfile from "./pages/Myprofile/MyProfile";
+import MyProfile from "../../MyProfile/MyProfile";
 
 /* TRAINER */
 import TrainerHome from "./pages/TrainerHome/TrainerHome";
