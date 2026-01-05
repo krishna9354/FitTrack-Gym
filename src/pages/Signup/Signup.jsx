@@ -2,9 +2,6 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./signup.css";
 
-// ✅ IMPORT IMAGE CORRECTLY
-import signupImg from "../../assets/login.webp";
-
 function Signup() {
   const [role, setRole] = useState("member");
   const [name, setName] = useState("");
@@ -40,11 +37,7 @@ function Signup() {
     localStorage.setItem("role", role);
     localStorage.setItem("currentUser", JSON.stringify(newUser));
 
-    if (role === "trainer") {
-      navigate("/TrainerHome");
-    } else {
-      navigate("/home");
-    }
+    role === "trainer" ? navigate("/TrainerHome") : navigate("/home");
   };
 
   return (
@@ -144,9 +137,9 @@ function Signup() {
               </div>
             </div>
 
-            {/* ✅ FIXED IMAGE */}
+            {/* ✅ IMAGE FROM public/assets */}
             <div className="signup-right">
-              <img src={signupImg} alt="Signup" />
+              <img src="/assets/login.webp" alt="Signup" />
             </div>
           </section>
         </div>
