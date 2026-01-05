@@ -2,10 +2,6 @@ import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import "./landing.css";
 
-// ✅ IMPORT LOCAL IMAGES (CORRECT WAY)
-import yogaImg from "../../assets/yoga.jpg";
-import lowerImg from "../../assets/lower.jpg";
-
 function Landing() {
   return (
     <>
@@ -75,7 +71,7 @@ function Landing() {
         <h3 className="section-title">Popular Workouts</h3>
 
         <div className="grid-3">
-          {/* ✅ FIRST CARD – UNCHANGED */}
+          {/* FIRST CARD */}
           <div className="workout-card">
             <img
               src="https://www.guardian.in/cdn/shop/articles/best-hiit-workouts.jpg"
@@ -88,9 +84,9 @@ function Landing() {
             </Link>
           </div>
 
-          {/* ✅ SECOND CARD – FIXED */}
+          {/* SECOND CARD */}
           <div className="workout-card">
-            <img src={yogaImg} alt="Yoga Workout" />
+            <img src="/assets/yoga.jpg" alt="Yoga Workout" />
             <h4>Yoga Flow</h4>
             <p>60 min • Flexibility</p>
             <Link to="/login" className="btn-primary">
@@ -98,9 +94,9 @@ function Landing() {
             </Link>
           </div>
 
-          {/* ✅ THIRD CARD – FIXED */}
+          {/* THIRD CARD */}
           <div className="workout-card">
-            <img src={lowerImg} alt="Strength Workout" />
+            <img src="/assets/lower.jpg" alt="Strength Workout" />
             <h4>Lower Body Strength</h4>
             <p>45 min • Muscle Build</p>
             <Link to="/login" className="btn-primary">
