@@ -1,6 +1,12 @@
 import "./about.css";
 import LoginNavbar from "../../components/LoginNavbar/LoginNavbar";
 
+// ✅ IMPORT TEAM IMAGES (CORRECT WAY)
+import krishnaImg from "../../assets/krishna.jpg";
+import pranayImg from "../../assets/pranay.jpg";
+import priyanshuImg from "../../assets/priyanshu.jpg";
+import princeImg from "../../assets/prince.jpg"; // optional placeholder
+
 function About() {
   return (
     <>
@@ -45,7 +51,6 @@ function About() {
           <h3>Meet Our Team</h3>
 
           <div className="grid-4">
-
             {/* KRISHNA GARG */}
             <a
               href="https://vite-portf.vercel.app/"
@@ -54,7 +59,7 @@ function About() {
               className="team-link"
             >
               <div className="team-card card">
-                <img src="fittrack\src\assets\krishna.jpg" alt="Krishna Garg" />
+                <img src={krishnaImg} alt="Krishna Garg" />
                 <div className="info">
                   <h4>Krishna Garg</h4>
                   <small>Team Leader</small>
@@ -70,10 +75,7 @@ function About() {
               className="team-link"
             >
               <div className="team-card card">
-                <img
-                  src="fittrack\src\assets\pranay.jpg"
-                  alt="Pranay Maheshwari"
-                />
+                <img src={pranayImg} alt="Pranay Maheshwari" />
                 <div className="info">
                   <h4>Pranay Maheshwari</h4>
                   <small>Team Member</small>
@@ -89,10 +91,7 @@ function About() {
               className="team-link"
             >
               <div className="team-card card">
-                <img
-                  src="fittrack\src\assets\priyanshu.jpg"
-                  alt="Priyanshu Singh"
-                />
+                <img src={priyanshuImg} alt="Priyanshu Singh" />
                 <div className="info">
                   <h4>Priyanshu Singh</h4>
                   <small>Team Member</small>
@@ -108,17 +107,13 @@ function About() {
               className="team-link"
             >
               <div className="team-card card">
-                <img
-                  src=""
-                  alt="Prince Pal"
-                />
+                <img src={princeImg} alt="Prince Pal" />
                 <div className="info">
                   <h4>Prince Pal</h4>
                   <small>Team Member</small>
                 </div>
               </div>
             </a>
-
           </div>
         </section>
 
