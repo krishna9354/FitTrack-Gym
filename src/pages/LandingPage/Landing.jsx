@@ -75,6 +75,20 @@ function Landing() {
         <h3 className="section-title">Popular Workouts</h3>
 
         <div className="grid-3">
+          {/* ✅ FIRST CARD – UNCHANGED */}
+          <div className="workout-card">
+            <img
+              src="https://www.guardian.in/cdn/shop/articles/best-hiit-workouts.jpg"
+              alt="HIIT Workout"
+            />
+            <h4>HIIT Cardio Blast</h4>
+            <p>30 min • Fat Burn</p>
+            <Link to="/login" className="btn-primary">
+              Login to Access
+            </Link>
+          </div>
+
+          {/* ✅ SECOND CARD – FIXED */}
           <div className="workout-card">
             <img src={yogaImg} alt="Yoga Workout" />
             <h4>Yoga Flow</h4>
@@ -84,6 +98,7 @@ function Landing() {
             </Link>
           </div>
 
+          {/* ✅ THIRD CARD – FIXED */}
           <div className="workout-card">
             <img src={lowerImg} alt="Strength Workout" />
             <h4>Lower Body Strength</h4>
