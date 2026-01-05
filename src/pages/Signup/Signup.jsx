@@ -152,7 +152,7 @@ function Signup() {
             {/* IMAGE */}
             <div className="signup-right">
               <img
-                src="https://images.unsplash.com/photo-1599058917212-d750089bc07c?auto=format&fit=crop&w=900&q=80"
+                src="fittrack\src\assets\login.webp"
                 alt="Signup"
               />
             </div>
