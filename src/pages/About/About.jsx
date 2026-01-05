@@ -33,7 +33,7 @@ function About() {
           </div>
 
           <div className="about-image">
-            <img src="/assets/gym.jpg" alt="Gym" />
+            <img src="/assets/lower.jpg" alt="Gym" />
           </div>
         </section>
 
